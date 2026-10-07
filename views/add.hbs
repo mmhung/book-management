@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm sách</title>
+</head>
+
+<body>
+
+    <h1>Thêm sách</h1>
+
+    <form action="/books" method="POST">
+
+        <div>
+            <label>Mã sản phẩm:</label>
+            <input
+                type="text"
+                name="productId"
+                required
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label>Tên sách:</label>
+            <input
+                type="text"
+                name="name"
+                required
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label>Giá:</label>
+            <input
+                type="number"
+                name="price"
+                required
+            >
+        </div>
+
+        <br>
+
+        <button type="submit">
+            Thêm sách
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/books">
+        Quay lại
+    </a>
+
+</body>
+
+</html>
